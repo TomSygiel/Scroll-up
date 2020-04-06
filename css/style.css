@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,300;1,700&display=swap');
 
 body {
@@ -47,17 +49,23 @@ figure {
 .scroll-to-top {
   position: relative;
   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   cursor: pointer;
   margin-top: 80px;
   width: 42px;
   height: 42px;
+  -webkit-transition: 250ms ease;
+  -o-transition: 250ms ease;
   transition: 250ms ease;
 }
 
 .scroll-to-top i:hover {
   color: #cbbdac;
   font-size: 45px;
+  -webkit-transition: 450ms ease ease-in-out;
+  -o-transition: 450ms ease ease-in-out;
   transition: 450ms ease ease-in-out;
 }
 
@@ -67,6 +75,8 @@ figure {
   font-size: 40px;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
